@@ -1,0 +1,35 @@
+<!--
+TODO: Add to <head> of all HTML pages to enable auto-discovery of blog feeds.
+This is especially useful for the pages /, /blog, and evey blog post - but it might just as well added to every page for consistency.
+-->
+<link
+    href="/feed.atom"
+    type="application/atom+xml"
+    rel="alternate"
+    title="Blog feed (Atom)"
+/>
+
+<!--
+    TODO: Add this Feed icon link to the page footer - or wherever you like
+    It uses the Lucide RSS icon (ISC License)
+    https://icones.js.org/collection/lucide?s=feed&icon=lucide:rss
+-->
+<a href="/feed.atom" style="text-decoration: none">
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+    >
+        <g
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+        >
+            <path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" />
+            <circle cx="5" cy="19" r="1" />
+        </g>
+    </svg>
+</a>
