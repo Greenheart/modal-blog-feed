@@ -52,7 +52,7 @@
     URL.revokeObjectURL(link.href);
   }
 
-  async function main() {
+  function main() {
     const feed = generateFeed();
     // The output format can be changed if desired, but Atom is recommended.
     // feed.rss2() -> RSS (XML)
@@ -60,5 +60,5 @@
     downloadFile("feed.atom", feed.atom1(), "application/atom+xml");
   }
 
-  await main();
+  main();
 })();
