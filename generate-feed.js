@@ -20,12 +20,12 @@
 
     posts.forEach((post) => {
       const title = post.querySelector("h2 a");
-      const [_authors, date] = post
-        .querySelector(".meta")
-        .innerText.split(" • ");
+      const meta = post.querySelector(".meta");
+      const [_authors, date] = meta.innerText.split(" • ");
 
       feed.addItem({
         title: title.innerText,
+        description: meta.nextElementSibling.innerText,
         id: title.href,
         link: title.href,
         date: new Date(date),
